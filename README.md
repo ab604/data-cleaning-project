@@ -26,7 +26,7 @@ The R script: [```run_analysis.R```](https://github.com/ab604/data_cleaning_proj
 11. The group the data frame by Subject and Activity in preparation for taking the average of each observed variable with ```group_by```.
 12. Use ```summarise_each``` to take the mean of each variable and output to a tidy data frame.
 13. Clean up the column names to indicate whether it is the mean in the time or frequency domain of each variable for easier reading.
-14. Write out a text file ```tidy_dat.txt``` using ```write.table``` with the default settings.
+14. Write out a text file ```tidy_dat.txt``` using ```write.table``` with the settings ```row.name=FALSE```.
 
 ```tidy_dat.txt``` contains the output processed data in the wide tidy data format, where each variable forms a column and each observation forms a row. The fixed variables of Subject and Activity are in columns 1 and 2 and the means of the measured variables follow in columns 3 to 68 as described in the [```Codebook.md```](https://github.com/ab604/data_cleaning_project/blob/master/Codebook.md).
 
