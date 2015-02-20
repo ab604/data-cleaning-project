@@ -131,8 +131,8 @@ dat$Activity <- gsub('[^a-zA-Z0-9.]', ' ', dat$Activity)
 # 4. Appropriately label the data set with descriptive variable names:
 
 # Replace colunmn names with slightly more descriptive labels
-colnames(dat) <- sub("mean", "Mean", colnames(dat))
-colnames(dat) <- sub("std", "Standard Deviation", colnames(dat))
+colnames(dat) <- sub("mean", " Mean ", colnames(dat))
+colnames(dat) <- sub("std", " Standard Deviation ", colnames(dat))
 
 # 5.From the data set in step 4, creates a second, independent tidy data set 
 # with the  average of each variable for each activity and each subject:
