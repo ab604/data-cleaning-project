@@ -31,7 +31,9 @@ The R script: [```run_analysis.R```](https://github.com/ab604/data_cleaning_proj
 ```tidy_dat.txt``` contains the output processed data in the wide tidy data format, where each variable forms a column and each observation forms a row. The fixed variables of Subject and Activity are in columns 1 and 2 and the means of the measured variables follow in columns 3 to 68 as described in the [```Codebook.md```](https://github.com/ab604/data_cleaning_project/blob/master/Codebook.md).
 
 To read the tidy data into R use the following command:
-`data <- read.table("tidy_dat.txt")`
+`data <- read.table("tidy_dat.txt",header=TRUE)`
+And then view the data using:
+`View(data)` (NB. capital V in View). 
 
 
 
