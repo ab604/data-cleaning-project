@@ -147,5 +147,5 @@ tidy_dat <- summarise_each(grp_dat, funs(mean))
 names(tidy_dat) <- sub("^t", "Mean Time ", names(tidy_dat))
 names(tidy_dat) <- sub("^f", "Mean Freq ", names(tidy_dat))
 
-# Write an ouptut text file using default settings in wide tidy form
-write.table(tidy_dat, file = "tidy_dat.txt")
+# Write an ouptut text file using row.name=FALSE in wide tidy form
+write.table(tidy_dat, file = "tidy_dat.txt", row.name=FALSE)
