@@ -32,6 +32,7 @@ The R script: [```run_analysis.R```](https://github.com/ab604/data_cleaning_proj
 
 To read the tidy data into R use the following command:
 `data <- read.table("tidy_dat.txt",header=TRUE)`
+
 And then view the data using:
 `View(data)` (NB. capital V in View). 
 
